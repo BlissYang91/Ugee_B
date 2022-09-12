@@ -13,4 +13,27 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <!-- 自定义top标题栏 -->
+    <declare-styleable name="CustomTopTitleBar">
+        <attr name="ctb_title" format="string" /> <!-- 标题栏文字描述 -->
+        <attr name="ctb_text_left" format="string" /> <!-- 左侧文字描述 -->
+        <attr name="ctb_text_right" format="string" /> <!-- 右侧文字描述 -->
+        <attr name="ctb_show_text_left" format="boolean" /> <!-- 是否显示左侧文字-->
+        <attr name="ctb_show_text_left_size" format="float" /> <!-- 左侧文字大小-->
+        <attr name="ctb_show_text_right" format="boolean" /> <!-- 是否显示右侧文字-->
+        <attr name="ctb_img_left" format="reference" /> <!-- 左侧IMG背景 -->
+        <attr name="ctb_img_right" format="reference" /> <!-- 右侧IMG背景-->
+        <attr name="ctb_show_img_left" format="boolean" /> <!-- 是否显示左侧IMG-->
+        <attr name="ctb_show_img_right" format="boolean" /> <!-- 是否显示右侧IMG-->
+        <attr name="ctb_back" format="color|reference" /> <!-- 标题栏背景色 -->
+        <attr name="ctb_show_line" format="boolean" /> <!-- 是否显示底部分割线-->
+    </declare-styleable>
+
+    <!-- 自定义item文字样式 -->
+    <style name="CustomTitleTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#00FF00</item>
+        <item name="android:typeface">monospace</item>
+    </style>
 </resources>
