@@ -47,6 +47,10 @@
                     android:scaleType="centerInside"/>
 
             </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
         </LinearLayout>
         <!--侧面导航-->
         <LinearLayout
